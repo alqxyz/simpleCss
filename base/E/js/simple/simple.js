@@ -1,0 +1,1 @@
+function tcl(e){ if(e.keyCode==27){ location.href='#'; }}

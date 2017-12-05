@@ -1,0 +1,355 @@
+/*!
+ * simple.css v1
+ * Copyright (c) 2017 @alqxyz
+ * Author: Alqxyz
+ * http://www.monagas.gob.ve/tribu/
+ */
+
+@charset "utf-8";
+/*Pre-formateo*/
+@font-face{
+font-family:'AvantGarde_LT_Medium.ttf';
+src:url('../../let/simple/AvantGarde_LT_Medium.ttf');
+font-weight:normal;
+font-style:normal;
+}
+
+.smpl{font-family:'AvantGarde_LT_Medium.ttf';}
+
+*{
+padding:0px;
+margin:0px;
+font-family:Arial;
+vertical-align:top;
+color: rgba(0,0,0, .7);
+word-wrap:break-word;
+outline:none;
+/*border:0;*/
+transition: all 300ms linear;
+box-sizing: border-box;
+}
+
+html{
+height:100%;
+text-size-adjust:100%;
+font-smoothing:antialiased;
+}
+
+body{
+background:url(../../img/simple/raya.png) , linear-gradient( rgba(255,255,255, 1) 30%, rgba(111,111,111, 1)) fixed; 
+background:url(../../img/simple/raya.png) , radial-gradient( rgba(255,255,255, 1) 50%, rgba(111,111,111, 1)) fixed; 
+color: rgba(0,0,0, 0.7);
+text-shadow:rgba(255,255,255,.3) 1px 1px 0px;
+font-size:100%;
+clear: both;
+}
+
+html, body {
+width: 100%;
+min-height: 100%;
+height: auto !important;
+height: 100%;
+}
+
+/*canvas{ display:block; vertical-align:bottom; }*/
+
+::selection{ background:black; color:white; text-shadow:none;}
+/* custom scrollbar */
+::-webkit-scrollbar { width: 8px;}
+::-webkit-scrollbar-track { background-color: rgba(217, 217, 217, 0.5);}
+::-webkit-scrollbar-thumb { background: rgba(184, 184, 184, 0.5); border-radius: 12px;}
+
+
+noscript{
+	margin: 12px;
+padding: 8px 12px;
+background: linear-gradient(180deg,#fff 37%, rgba(195,195,195, 1));
+text-align: center;
+box-shadow: 0px 0px 5px black;
+font-weight: bold;
+display: block;
+position: fixed;
+border-radius: 8px;
+}
+noscript span{
+	color:#c80003;
+}
+
+img{ filter: drop-shadow(0px 8px 3px rgba(0,0,0, .7)); }
+
+audio, video, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {display: block; clear: both;}
+audio, video{ box-shadow:0px 8px 12px -4px rgba(0,0,0, .8); width: 100%; }
+a{border:none; outline:0; text-decoration:none; font-weight: bold; text-decoration: underline;}
+ol,ul,li{ list-style-type:none; list-style:none; }
+hr { border: 0px; height: 2px; text-align: center; background: linear-gradient(90deg, rgba(255,255,255,0), rgba(111,111,111, 1),rgba(111,111,111, 1), rgba(255,255,255,0)); margin: 2px 0px; clear: both; }
+hr[name="tribu"]:after {
+content:"Tribu Pro-Cai";
+position: relative;
+top:-10px ;
+width: auto;
+padding: 2px 12px 2px 8px ;
+border: 1px solid rgba(0,0,0, .3);
+font-family:'Bandal.ttf';
+text-shadow:2px 2px 2px black;
+box-shadow: 0px 0px 8px black;
+border-radius: 0px 20px;
+background:linear-gradient(180deg,rgba(255,255,255, 0)12%,rgba(0,0,0, 0.6)),rgba(68,85,0, 1);
+color: white;
+font-size:18px;
+}
+
+blockquote{
+	border-left: 3px solid gray !important;
+	text-align: justify;
+	margin-left: 40px;
+	padding-left: 8px;
+	font-size: 21px;
+	font-family: monospace;
+}
+blockquote::first-letter {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+
+hr[name="insti"]:after {
+content:"Aquí hay pueblo!! ";
+letter-spacing: 1.3px;
+position: relative;
+top:-10px ;
+width: auto;
+padding:4px 10px 4px 10px ;
+border: 1px solid rgba(0,0,0, .3);
+font-family:Impact;
+text-shadow:2px 2px 2px black;
+box-shadow: 0px 0px 8px black;
+border-radius: 0px 20px;
+background: linear-gradient(180deg,rgba(255,255,255, 0)12%,rgba(0,0,0, 0.6)),rgba(200,0,3, .9);
+color: white;
+font-size: 14px;
+}
+input[type="color"],details,a,input[type="radio"],input[type="checkbox"],input[type="range"]{ cursor: pointer; }
+
+fieldset{
+background: rgba(255,255,255, .7);
+padding: 12px;
+border:1px solid gray;
+box-shadow:0px 25px 30px -21px rgba(0,0,0, 1), 0px 0px 21px rgba(0,0,0, .3) inset ;
+border-radius: 3px;
+width: 98%;
+max-width: 800px;
+text-align: center;
+margin-bottom: 12px;
+}
+p::first-letter,legend::first-letter,dt::first-letter,dd::first-letter, h1::first-letter, h2::first-letter, h3::first-letter, h4::first-letter, h5::first-letter, h6::first-letter { text-transform: capitalize; }
+dl { text-align: justify; padding-left: 12px; }
+dl dt { font-weight: 600; }
+dl dd::first-letter { padding-left: 12px; }
+fieldset legend{
+font-weight: bold;
+border:1px solid gray;
+background: rgba(255,255,255, 1);
+padding: 4px;
+border-radius: 3px;
+box-shadow:0px 8px 12px -4px rgba(0,0,0, .8), 0px 0px 21px rgba(0,0,0, .3) inset ;
+}
+output,select,textarea,input:not([type=range]){
+padding:0px 16px 0px 3px;
+border:rgba(111,111,111, .8) solid 1px;
+color:rgba(0,0,0, 0.6);
+font-size:21px;
+padding:4px 0px;
+text-align: center;
+background:linear-gradient(rgba(255,255,255, 1)30%,rgba(111,111,111, .3)),white;
+box-shadow: 0px 2px 2px rgba(111,111,111, .8);
+display: inline-block;
+min-height: 37px;
+max-width: 250px;
+width: 98%;
+}
+textarea { resize: none;max-width:1000px;min-height:100px;}
+
+progress{
+appearance: none;
+border-radius:12px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.28) inset, 2px 2px 3px rgba(0,0,0, .73);
+border: 1px solid gray;
+background:linear-gradient(rgba(255,255,255, 1)30%,rgba(111,111,111, .3)),white;
+height: 20px;
+text-align: right;
+/*animation: girar 2s linear infinite;*/
+}
+progress[value]::-webkit-progress-bar {
+appearance: none;background:linear-gradient(rgba(255,255,255, 1)30%,rgba(111,111,111, .3)),white;
+border-radius:12px;
+box-shadow: 0 3px 4px rgba(0, 0, 0, 0.30) inset;
+}
+
+progress[value]::-webkit-progress-value {
+background:
+-webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%),
+-webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)),
+-webkit-linear-gradient(left, #c70000, #445500);
+border-radius: 12px; 
+background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+progress[value]::-moz-progress-bar {
+background-image:-moz-linear-gradient( 135deg,transparent,transparent 33%,rgba(0,0,0,.1) 33%,rgba(0,0,0,.1) 66%,transparent 66%),-moz-linear-gradient( top,rgba(255, 255, 255, .25),rgba(0,0,0,.2)),-moz-linear-gradient( left,  #c70000, #445500);
+background-size: 35px 20px, 100% 100%, 100% 100%;
+border-radius: 12px; 
+}
+
+@keyframes girar {
+	0% {background-position: 0 0; transform: rotate(0deg);}
+	100% {background-position: 50px 50px; transform: rotate(360deg);}
+}
+
+
+[required],input[required]{ box-shadow: 2px 0px 0px #445500; }
+
+input:invalid,textarea:invalid,select:invalid{ box-shadow: -2px -0px 0px #c70000; }
+
+input[type=radio],input[type=checkbox]{ box-shadow: none; width: 30px !important; height: 30px !important;}
+/*
+input:focus:invalid,select:focus:invalid,textarea:focus:invalid{
+border: 2px solid #c80003;
+box-shadow: none;
+color: #b90000;
+}
+*/
+input[type="submit"], input[type="reset"],input[type="button"],button{
+text-transform: capitalize;
+outline:0;
+padding: 2px 8px;
+font-weight: bold;
+font-size: 111%;
+background:linear-gradient(rgba(255,255,255, 1)-10%,rgba(111,111,111, .8)),white;
+text-shadow:silver 1px 1px 1px;
+border-radius: 1px 3px;
+box-shadow: 0px 2px 3px rgba(0,0,0, .8);
+border: 1px solid gray;
+min-height: 40px;
+cursor: pointer;
+width: auto !important;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover,input[type="button"]:hover,button:hover{
+box-shadow: 0px -1px 3px rgba(0,0,0, .8);
+background:linear-gradient(rgba(111,111,111, .8)-10%,rgba(255,255,255, 1)),white;
+transition: all 80ms linear;
+}
+
+input[type="submit"]:active, input[type="reset"]:active,input[type="button"]:active,button:active{
+transform: scale(.98) translateY(-3px);
+transition: all 80ms linear;
+}
+
+marquee{
+text-align:center;
+width:100%;
+color:silver;
+font-size:30px;
+font-weight: bold;
+text-shadow:rgba(0,0,0, 1.0) 0px 2px 3px;
+min-height: 40px;
+border: 1px solid gray;
+}
+pre{ font-family: monospace; white-space: pre; }
+
+code:before{
+padding: 2px 4px;
+text-align: center;
+background: rgba(0,0,0, .3);
+font-size: 16px;
+content: 'Código:';
+text-transform: uppercase;
+display: block;
+}
+
+code{
+white-space: pre;
+word-wrap: break-word;
+margin:12px 0px; 
+background: rgba(255,255,255, .8);
+font-family: monospace;
+font-weight: bold;
+border-radius: 3px;
+border: 1px solid gray;
+display: block;
+max-width: 800px;
+text-align: left;
+}
+
+code > *{
+font-family: monospace;
+font-size: 13px;
+font-weight: 600;
+padding-left: 12px;
+}
+abbr{text-decoration: underline; font-weight: bold;}
+sub{font-weight: bold; vertical-align: sub; }
+sup{font-weight: bold; vertical-align: super; }
+em,kbd{font-weight: bold;}
+table{
+height:auto;
+border-spacing:0px 0px;
+border:1px solid black;
+border-collapse:separate;
+background:white;
+border:rgba(111,111,111, .8) solid 1px;
+box-shadow: 0px 2px 2px rgba(111,111,111, .8);
+width: 98%;
+}
+
+/*table tbody tr:hover, table tbody tr:nth-child(2n):hover {background: gray; transform: scale(1.01); font-weight: bold;}*/
+table tbody tr:hover, table tbody tr:nth-child(2n):hover {background: gray; }
+table tbody tr:nth-child(2n) { background: rgba(192,192,192, .4);}
+table tbody tr:hover td , table tbody tr:nth-child(2n):hover td, table tbody tr:hover td b, table tbody tr:nth-child(2n):hover td b {color: white; text-shadow:rgba(0,0,0,.3) 1px 1px 0px;}
+
+thead,tfoot{
+font-weight: bold;
+text-align: center;
+border-bottom: 2px solid gray;
+background: silver;
+color: white;
+text-shadow: 1px 1px 1px white;
+}
+
+details summary{cursor: pointer; text-decoration: underline;}
+details[open] > summary {font-weight:bold;}
+
+/* details-shim.js*/
+details.closed > * {display: none;}
+details.closed > summary {display: block;}
+details.open   > summary {display: block;}
+details.open   > summary{font-weight:bold;}
+details.closed > summary:before {display: inline-block; content: "\25b6"; }
+details.open   > summary:before {display: inline-block; content: "\25bc"; }
+/* details-shim.js*/
+
+div[name="apa"]:not(:target){ display: none; }
+div[name="apa"]:target:after{ content: 'Tecla "Esc" para salir.'; text-align: center; display: block;}
+div[name="apa"]:target{ display: block; clear:both; animation: ver 3s 1 ease-in-out; }
+
+@keyframes ver { 0% { opacity:0; } 100% { transform:scale(1.0) } }
+
+@media only print{
+
+*{box-shadow: none !important; text-decoration: none; color: rgba(0, 0, 0, .7)}
+
+body,output,button,select,textarea,input:not([type=range]){background:none; box-shadow: none; border: none; }
+
+marquee,input[type=range],input[type=file],progress,footer,aside{ display: none;}
+
+div[name="izq"]{ width: 0px !important; display: none; }
+
+div[name="der"]{
+width: 98% !important;
+min-width: 900px;
+float:none; 
+display: block; 
+border: 0px solid red;
+}
+
+}
